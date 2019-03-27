@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="376dp"
+        android:layout_height="573dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <android.support.design.widget.TabLayout
+        style="@style/tabstyle"
+        android:id="@+id/menu"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="裁剪" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="撤销" />
+    </android.support.design.widget.TabLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/label"
+        style="@style/tabstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menu"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/label"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/pre" />
+
+    <ImageButton
+        android:id="@+id/back_to_pic"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="11dp"
+        android:adjustViewBounds="true"
+        android:background="@color/white"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/save"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:adjustViewBounds="true"
+        android:background="@color/white"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/save" />
+</RelativeLayout>
